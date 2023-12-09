@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CyberGauridian -Techniques and Solutions</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="backup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- <h1>CyberGuardian</h1> -->
+            <a href="./index.html">
+                <img src="CyberGaurdian-logos.jpeg">
+            </a>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a class="current" href="./techssols.html">Techniques And Solutions</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+        <h1>Now lets talk about how Hackers hack your computer using their passwords and Hashes.</h1> <br>
+        <h2>The entire process will be documented here and I will also show you how to defend against it.</h2><br>
+        <h2>So basically the Hacker needs just a Kali Linux computer (or sometimes even a <u><a style="color: blue;"
+                    href="https://en.wikipedia.org/wiki/Virtual_machine">Virtual Machine)</a> </u> </h2><br>
+        <h2>Linux is sometimes considered a programmers and hackers only operating system. Which nobody knows why.</h2>
+        <div class="bigfont1">
+            Now Disclaimer: <br>
+            The things showed/discussed from now is a real hacking technique. So even if you decide to use it on someone
+            (ethically) please make sure you have explicit permission and are following all the rules.
+        </div>
+        <br>
+        <br>
+        <br>
+        <p>So let's assume the Hacker(s) has the access to your Windows Computer, but he or she is too greedy to just
+            have it once. So what will he do? Buy your computer? OF COURSE NOT. Hack it? Yes, that's what a sigma do.
+            Please do not take it seriously.</p>
+
+        <br>
+
+        <p>So let's continue without anymore time-waste.</p>
+
+        <p>So let's you have a password in your Windows Computer, which is a very good thing.</p>
+        <p>Windows doesn't just your passwords in plain text form. </p>
+        <p>It is stored in the form of something called <b class="yellow">HASH</b>. </p>
+        <p>If you don't what a <b class="yellow">HASH</b> is, read this <u><a style="color: blue;"
+                    href="https://en.wikipedia.org/wiki/Hash_function"><i> Wikipedia Article </i> </u></a> </p>
+
+        <p>For the sake of education we will assume that your password is:</p>
+        <p class="yellow">Sup3rs3RETP@@$$word</p>
+        <p>Which is a good password and indicated that you used some kind of password generator to generate this. Even
+            then you will be hacked.</p>
+        <p>After you set this password, it will be went through a hashing algorithm. Which in this case is: <br> <p class="yellow">MD4 Hashing algorithm</b> after which it will look like somebody chewed and spat out.
+        </p>
+        <p>After hashing the password will look something like this: <br></p>
+        <p class="hash">ca0a1e55c19606f471a5b3ecf8054271</p>
+        <p>So whenever you type in the password it will again go through the <b class="yellow">MD4 Hashing algorithm</b>
+            and if the hashes match, you will login.</p>
+
+        <p>This hash is what the hacker needs to get into your Computer from his.</p>
+        <p>While it would not immediately tell the hacker what the hash is, it will, the hacker will crack it.</p>
+        <p>Actually not entirely the hacker because he will need some softwares.</p>
+        <p>Now lets talk about the process through which the Hacker will get the hash, and break into your computer.</p>
+        <ul>
+            <br>
+            <!-- <br>
+            <br> -->
+            <li>Get access to your system once.</li>
+            <p>He or she will need the access to your computer atleast once to get the files needed from your computer to get the hash.</p>
+            <p>After getting physical access to your computer once, he will try his or her best to get the files as quickly as possible.</p>
+            <br>
+            <li>Get the files</li>
+            <p>He will search for <b class="yellow">Resgistry Editor</b></p>
+            <p>He will get the UAC prompt saying that <b class="yellow">"Do you want to allow this applcation to make changes to your system?"</b> which you might also get while installing anything on your Windows machine. On which the hacker will click yes.</p>
+            <p></p>
+                        </ul>
+        <!--This is main div closing tag.-->
+    </div>
+</body>
+
+</html>
